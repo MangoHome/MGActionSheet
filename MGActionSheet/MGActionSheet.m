@@ -119,7 +119,7 @@
 - (void)layoutContentView {
     NSLayoutConstraint *sheetLeft = [NSLayoutConstraint constraintWithItem:self.sheetView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.sheetBackgroundView attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0];
     NSLayoutConstraint *sheetRight = [NSLayoutConstraint constraintWithItem:self.sheetView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.sheetBackgroundView attribute:NSLayoutAttributeRight multiplier:1.0 constant:0];
-    NSLayoutConstraint *sheetBottom = [NSLayoutConstraint constraintWithItem:self.sheetView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.sheetBackgroundView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:_sheetHeight];
+    NSLayoutConstraint *sheetBottom = [NSLayoutConstraint constraintWithItem:self.sheetView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.sheetBackgroundView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0];
     NSLayoutConstraint *sheetTop = [NSLayoutConstraint constraintWithItem:self.sheetView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.sheetBackgroundView attribute:NSLayoutAttributeTop multiplier:1.0 constant:0];
     [self.sheetBackgroundView addConstraints:@[sheetLeft,sheetRight,sheetTop,sheetBottom]];
     
